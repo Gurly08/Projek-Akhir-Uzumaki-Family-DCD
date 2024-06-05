@@ -1,0 +1,306 @@
+/* Mengatur margin dan padding untuk body dan elemen lainnya */
+body, h1, h2, p, ul, li, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding-block: 1rem;
+}
+
+header.navbar .logo img {
+    width: 180px;
+    height: 65px;
+    padding-left: 45px;
+}
+
+header.navbar .nav-list ul {
+    display: flex;
+    list-style: none;
+    padding-right: 115px;
+    gap: 2rem 1rem;
+}
+
+header.navbar .nav-list ul li {
+    margin: 15px;
+}
+
+header.navbar .nav-list ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFCF54; 
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+header .navbar .nav-list ul li:hover a{
+    background-color: #FFCF54;
+    color: white;
+}
+
+/* Menghapus margin dan padding dari class content dan content-black */
+main .content,
+main .content-black,
+main .content-gallery {
+    margin: 0;
+    padding: 0;
+}
+
+/*css content beranda*/
+.content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background: linear-gradient(to right, #D07140, #D7A63F);
+    height: 750px;
+}
+
+.content .content-description {
+    margin-left: 65px;
+    flex: 1 1;
+}
+
+.content .content-description .title-one {
+    letter-spacing: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.content .content-description .title-two {
+    letter-spacing: 10px;
+    font-size: 40px;
+    color: bisque;
+    font-weight: 500;
+}
+
+.content .content-description .description-title {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2.5rem;
+    color: beige;
+}
+
+.content .content-image img {
+    margin-left: 100px;
+    margin-top: 65px;
+    margin-right: 100px;
+    background-color: #ECECEB;
+    border-radius: 65px;
+    border: 0.35cm solid;
+    color: #ECECEB;
+}
+
+.content .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: #FFCF54;
+
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.content .content-description button:hover {
+    border: 3px solid #FFCF54;
+    background-color: transparent;
+
+    color: whitesmoke;
+}
+
+/*css content stories*/
+.content-black {
+    background-color: #4A4343;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    align-self: flex-start; 
+    margin-left: 5%;
+    margin-top: 30px;
+    letter-spacing: 20px;
+    color: #FFD88C;
+}
+
+.content-card{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(to right, #D07140, #D7A63F);
+    height: 600px;
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 65px;
+}
+
+.card >article >p{
+    margin: 35px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.image-little1{
+    margin-top: 25px;
+    height: 327px;
+    margin-left: 80px;
+}
+
+.image-little2{
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 327px;
+}
+
+.image-little3{
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 327px;
+}
+
+/*css content gallery*/
+.content-gallery {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background: linear-gradient(to right, #D07140, #D7A63F);
+    height: 750px;
+}
+
+.content-gallery .content-description {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.content-gallery .content-description .title-one {
+    letter-spacing: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.content-gallery .content-description .title-two {
+    letter-spacing: 10px;
+    font-size: 45px;
+    color: bisque;
+    font-weight: 500;
+}
+
+.content-gallery .content-description .description-title {
+    font-size: 20px;
+    text-align: justify;
+    color: beige;
+    margin-top: 25px;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.content-gallery .content-description .foto-clan{
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.content-gallery .content-image img {
+    margin-left: 100px;
+    margin-top: 65px;
+    background-color: #FFD88C;
+    border-radius: 65px;
+    border: 0.35cm solid;
+    color: #FFD88C;
+}
+
+.content-gallery .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #FFCF54;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.content-gallery .content-description button:hover {
+    border: 3px solid #FFCF54;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+/*css aside section*/
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #2d3e50;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #4A4343;
+
+    text-align: center;
+    font-weight: bold;
+}
