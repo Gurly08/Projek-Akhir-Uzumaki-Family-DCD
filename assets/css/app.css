@@ -125,7 +125,7 @@ main .content-gallery {
 /*css content stories*/
 .content-black {
     background-color: #4A4343;
-    height: 850px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,7 +149,7 @@ main .content-gallery {
 
 .card {
     background: linear-gradient(to right, #D07140, #D7A63F);
-    height: 600px;
+    height: 700px;
     margin-top: 20px;
     width: 300px;
     display: flex;
